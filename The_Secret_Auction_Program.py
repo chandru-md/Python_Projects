@@ -16,8 +16,6 @@ def find_highest_bidder(bidding_dictionary):
     winner = ""
     highest_bid = 0
 
-    max(bidding_dictionary)
-
     for bidder in bidding_dictionary:
         bid_amount = bidding_dictionary[bidder]
         if bid_amount>highest_bid:
@@ -38,4 +36,5 @@ while continue_bidding:
         find_highest_bidder(bids)
     elif should_continue == 'yes':
         print("\n" * 30)
+
 
